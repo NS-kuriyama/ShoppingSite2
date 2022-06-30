@@ -1,0 +1,40 @@
+@charset "UTF-8";
+body{
+	display: flex;
+	flex-direction: column;
+}
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  height: 48px;
+
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  padding-top: 30px;
+  padding-left: 96px;
+}
+.sidebar {
+  width: 96px;
+  background-color: moccasin;
+  box-sizing: border-box;
+}
+
+header.menu-item {
+	display: inline;
+}
+
+header.menu-group {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	border: 1px solid #333;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}

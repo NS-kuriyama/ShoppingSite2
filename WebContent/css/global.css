@@ -1,0 +1,97 @@
+@charset "UTF-8";
+body{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    height: 60px;
+    background-color: yellow;
+}
+.glovalNavigation{
+	 display: flex;
+    height: 20%;
+    text-align: center;
+    color: #fff;
+}
+main{
+    display: flex;
+    min-height: 100vh;
+    margin: 10px 0 10px 0;
+}
+.content{
+    flex: 1;
+    background-color: #eee;
+    text-align: center;
+    margin-right: 10px;
+}
+.localNavigation{
+    text-align: center;
+    color: #fff;
+    width: 250px;
+}
+.footer{
+    height: 70px;
+    text-align: center;
+    background-color: #eee;
+}
+.menu-item {
+	display: inline;
+}
+.menu-group {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	border: 1px solid #333;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color : yellow;
+}
+.top-banner{
+	display: flex;
+	flex-wrap:wrap;
+}
+.top-banner li {
+	width: calc(100%/2);/*←画像を横に4つ並べる場合*/
+	padding:0 15px;/*←画像の左右に5pxの余白を入れる場合*/
+	box-sizing:border-box;
+}
+.top-banner li img {
+	max-width:100%; /*画像のはみだしを防ぐ*/
+	height: auto; /*画像の縦横比を維持 */
+	border:solid 1px #ccc; /*←画像を1pxのグレーの枠線で囲む指定の場合*/
+}
+
+.star5_rating{
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    white-space: nowrap;
+    color: #CCCCCC; /* グレーカラー 自由に設定化 */
+    /*font-size: 30px; フォントサイズ 自由に設定化 */
+}
+
+.star5_rating:before, .star5_rating:after{
+    content: '★★★★★';
+}
+
+.star5_rating:after{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #ffcf32; /* イエローカラー 自由に設定化 */
+}
+
+.star5_rating[data-rate="5"]:after{ width: 100%; } /* 星5 */
+.star5_rating[data-rate="4.5"]:after{ width: 90%; } /* 星4.5 */
+.star5_rating[data-rate="4"]:after{ width: 80%; } /* 星4 */
+.star5_rating[data-rate="3.5"]:after{ width: 70%; } /* 星3.5 */
+.star5_rating[data-rate="3"]:after{ width: 60%; } /* 星3 */
+.star5_rating[data-rate="2.5"]:after{ width: 50%; } /* 星2.5 */
+.star5_rating[data-rate="2"]:after{ width: 40%; } /* 星2 */
+.star5_rating[data-rate="1.5"]:after{ width: 30%; } /* 星1.5 */
+.star5_rating[data-rate="1"]:after{ width: 20%; } /* 星1 */
+.star5_rating[data-rate="0.5"]:after{ width: 10%; } /* 星0.5 */
+.star5_rating[data-rate="0"]:after{ width: 0%; } /* 星0 */

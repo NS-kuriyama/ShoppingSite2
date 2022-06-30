@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+li.menu-item {
+	display: inline;
+	margin: 0 30px;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	border: 1px solid #333;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
